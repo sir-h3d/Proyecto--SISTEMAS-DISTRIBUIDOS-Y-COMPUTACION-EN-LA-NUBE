@@ -8,13 +8,13 @@ const mysql = require('mysql2');
 
 async function getDataFromMySQL() {
     const connection = mysql.createConnection({
-      host: '127.0.0.1',
-      user: 'root',
-      password: 'root',
+      host: 'stores.cbvfkwq2aepn.us-east-1.rds.amazonaws.com',
+      user: 'admin',
+      password: 'administrador',
       database: 'store_db'
     });
     const promise = connection.promise();
-    const [rows, fields] = await promise.query('SELECT * FROM stores');
+    const [rows, fields] = await promise.query('select * from store LIMIT 100;');
     return rows;
 }
 
