@@ -6,10 +6,15 @@ Este repositorio de GitHub contiene un proyecto que integra una base de datos My
 ### 1. Configuración de la Base de Datos
 El proyecto utiliza una base de datos MySQL para almacenar datos relacionados con las tiendas.
 Detalles de la base de datos:
+
 Host: ------------------------------------
+
 Usuario: ---------
+
 Contraseña: -------------
+
 Base de Datos: -------------
+
 ### 2. Script de Importación de Datos en Python
 El script de Python (data_import.py) se conecta a la base de datos MySQL e importa datos desde un archivo CSV llamado 'Stores.csv' a la tabla 'store'.
 El script utiliza las bibliotecas mysql.connector y pandas para la conectividad con la base de datos y el procesamiento del archivo CSV.
